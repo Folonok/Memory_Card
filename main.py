@@ -30,12 +30,16 @@ class Question:
         Question.count_ans += 1
         print(Question.count_ans)
 
-q1 = Question('Яблуко', 'apple', 'application', 'pinapple', 'apply')
-q2 = Question('Дім', 'house', 'horse', 'hurry', 'hour')
-q3 = Question('Миша', 'mouse', 'mouth', 'muse', 'museum')
-q4 = Question('Число', 'number', 'digit', 'amount', 'summary')
-# q5 = Question('Дім', )
-questions = [q1,q2,q3,q4]
+q1 = Question('Банан', 'banana', 'banan', 'ban', 'bankas')
+q2 = Question('Гроші', 'money', 'mones', 'mouse', 'mius')
+q3 = Question('Мавпа', 'monkey', 'monke', 'you', 'maupa')
+q4 = Question('Картопля', 'potato', 'potating', 'pot', 'kartopla')
+q5 = Question('Двері', 'door', 'dour', 'dweri', 'dvier')
+q6 = Question('Книга', 'book', 'Bouk', 'bluuk', 'knuha')
+q7 = Question("М'яч", 'ball', 'bool', 'match', 'mutch')
+q8 = Question('Медаль', 'medal', 'mogal', 'megan', 'merta')
+q9 = Question('Казка', 'tale', 'taci', 'tala', 'tool')
+questions = [q1,q2,q3,q4,q5,q6,q7,q8,q9]
 radio_buttons = [btn1, btn2, btn3, btn4]
 
 main_win = QWidget()
@@ -118,7 +122,7 @@ def add_question():
                      le_wrong2.text(),
                      le_wrong3.text(),
                      )
-    
+
     questions.append(new_q)
 add_btn.clicked.connect(add_question)
 clear_btn.clicked.connect(clear)
@@ -130,4 +134,3 @@ menu_btn.clicked.connect(menu_show)
 
 main_win.show()
 app.exec_()
-
