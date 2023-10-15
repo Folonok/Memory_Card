@@ -39,7 +39,8 @@ q6 = Question('Книга', 'book', 'Bouk', 'bluuk', 'knuha')
 q7 = Question("М'яч", 'ball', 'bool', 'match', 'mutch')
 q8 = Question('Медаль', 'medal', 'mogal', 'megan', 'merta')
 q9 = Question('Казка', 'tale', 'taci', 'tala', 'tool')
-questions = [q1,q2,q3,q4,q5,q6,q7,q8,q9]
+q10 = Question('Карта', 'map', 'mapy', 'maps', 'myp')
+questions = [q1,q2,q3,q4,q5,q6,q7,q8,q9,q10]
 radio_buttons = [btn1, btn2, btn3, btn4]
 
 main_win = QWidget()
